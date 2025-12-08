@@ -2,7 +2,7 @@
 ## やりたいこと  
 ・XM6 TypeG上で動くx68k環境でLANを使えるようにする手順を記録に残す  
   
-## 必要なもの  
+## 必要なもの(2025.12.08現在)
 ・Windows用のTAPドライバ  
 　→ OpenVPNをインストールするか、OpenVPNのTAPドライバを単独でインストールする  
  　　参考) https://www.choge-blog.com/programming/windows-tapdevice/#toc9  
@@ -11,7 +11,7 @@
 ・Neptune-X / Nereid 用のネットワークドライバ  
 　→ etherL12.sys : http://retropc.net/x68000/software/hardware/nereid/   
 　→ etherL12wa.sys : https://github.com/yunkya2/etherL12  
-　　※後者はXM6G TypeG＋X68030エミュレーション専用  
+　　※後者はXM6 TypeG(Ver3.37以前)＋X68030エミュレーション環境専用  
   
 ## やっておくこと  
 ・XM6 TypeG上でX68000もしくはX68030環境を動くようにしておく  
