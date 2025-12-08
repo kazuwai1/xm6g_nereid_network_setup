@@ -25,8 +25,8 @@
 ・DHCP環境の場合、DHCPに割り当てられない空きアドレスも調べておく  
 ### XM6 TypeG上のHuman68k環境を設定する  
 #### CONFIG.SYS  
-・"PROCESS=”行を設定する
-・etherL12.sys or etherL12.sys を組み込む
+・"PROCESS=”行を設定する  
+・etherL12.sys or etherL12.sys を組み込む  
 #### ifconfigとinetdconf  
 ・ローカルネットワークの空きアドレスを en0 に設定する  
 ・netmaskはWindows機と同じでOK  
