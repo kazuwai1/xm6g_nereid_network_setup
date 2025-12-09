@@ -28,7 +28,7 @@
 ### XM6 TypeG上のHuman68k環境を設定する  
 #### CONFIG.SYS  
 ・"PROCESS=”行を設定する  
-　→TCPPACKAのドキュメントには "PROCESS=2 10 10"、Nereidのドキュメントには"PROCESS=32 10 100"とあります。とりあえずどちらでも動きます。
+　→TCPPACKAのドキュメントには "PROCESS=2 10 10"、Nereidのドキュメントには"PROCESS=32 10 100"とあります。とりあえずどちらでも動きます。  
 ・etherL12.sys or etherL12.sys を組み込む  
 #### ifconfigとinetdconf  
 ・ループバック(localhost)を使えるようにする： ifconfig lp0 up
