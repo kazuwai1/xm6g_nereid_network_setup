@@ -20,6 +20,8 @@
 ### WindowsにTAPドライバをインストールしてネットワークアダプタ名をリネームする  
 　参考) https://www.choge-blog.com/programming/windows-tapdevice/  
 ### XM6 TypeGの設定画面でNereidを有効化して、TAPドライバ名を設定する  
+　こんな感じで赤丸の個所を適宜設定する  
+ ![設定ﾀﾞｲｱﾛｸﾞ](xm6g_setting.png)  
 ### Windows側のLAN環境を確認する  
 ・ipconfigでIPアドレスやネットマスクを調べる  
 ・DHCP環境の場合、DHCPに割り当てられない空きアドレスも調べておく  
