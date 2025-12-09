@@ -26,10 +26,17 @@
 ### XM6 TypeG上のHuman68k環境を設定する  
 #### CONFIG.SYS  
 ・"PROCESS=”行を設定する  
+　→TCPPACKAのドキュメントには "PROCESS=2 10 10"、Nereidのドキュメントには"PROCESS=32 10 100"とあります。とりあえずどちらでも動きます。
 ・etherL12.sys or etherL12.sys を組み込む  
 #### ifconfigとinetdconf  
-・ローカルネットワークの空きアドレスを en0 に設定する  
-・netmaskはWindows機と同じでOK  
+・ループバック(localhost)を使えるようにする： ifconfig lp0 up
+・ローカルネットワークの空きアドレスを en0 に設定する
+　例) ifconfig en0 192.168.10.100 netmask 255.255.255.0  
+　　→この例はウチのWifiルータにぶら下がっているLANが192.168.10.xxxで、DHCPのアドレス割り当て範囲が101-200ということで空きの100を設定した例です
+　　→netmaskはホストPCと同じでいいです(ipconfigで確認できます)  
+・inetdconfでゲートウェイアドレスとdnsを指定しておきます  
+　例) inetdconf +router 192.168.10.1 +dns 192.168.10.1
+　　→この例は我が家のWifiルータにぶら下がっているLANの例です
 ### Windows上のネットワークアダプタのブリッジ設定  
 　こんな感じで、(コントロールキーを押しながら)TAPドライバとホストPCのLANアダプタを選択して
 右クリックで「ブリッジ接続」を選択します。
