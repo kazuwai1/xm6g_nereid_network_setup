@@ -1,8 +1,8 @@
-# XM6 TypeG の Nereid のLAN機能を設定してみる(作成中)  
+# XM6 TypeGのNereidのLAN機能を設定してみる  
 ## やりたいこと  
-・XM6 TypeG上で動くx68k環境でLANを使えるようにする手順を記録に残す  
+・XM6 TypeG上で動くHuman68k環境でLANを使えるようにする  
 　　(XM6 TypeG + NetBSDであれば https://xbeeing.com/xm6typeg-netbsd-x68k-9-0-nereid/ の解説が詳しいです)
-## 必要なもの(2025.12.08現在)
+## 必要なもの
 ・Windows用のTAPドライバ  
 　→ OpenVPNをインストールするか、OpenVPNのTAPドライバを単独でインストールする  
  　　参考) https://www.choge-blog.com/programming/windows-tapdevice/  
@@ -48,7 +48,7 @@ TAPドライバをクリックして選択→上に表示される「この接�
 ・inetdconfでゲートウェイアドレスとdnsを指定しておきます  
 　例) inetdconf +router 192.168.10.1 +dns 192.168.10.1  
 　　→この例では我が家のWifiルータにぶら下がっているおうちLANの値を設定しています  
-・これらの設定はAUTOEXEC.BATに記述しておくと手間が省けます
+・これらの設定は設定がうまくいったらAUTOEXEC.BATに記述しておくと以降の手間が省けます
 ### Windows上のネットワークアダプタのブリッジ設定  
 こんな感じで、コントロールキーを押しながらTAPドライバとホストPCのLANアダプタを選択して右クリックで「ブリッジ接続」を選択します。  
 　![ブリッジ設定例](./bridge.png)  
