@@ -17,8 +17,15 @@
 ・XM6 TypeG上でX68000もしくはX68030環境を動くようにしておく  
   
 ## 実際の作業  
-### WindowsにTAPドライバをインストールしてネットワークアダプタ名をリネームする  
-　参考) https://www.choge-blog.com/programming/windows-tapdevice/  
+### WindowsにTAPドライバをインストールする  
+　OpenVPNをインストールするか、TAPドライバを単独でインストールします。  
+ 　参考) https://www.choge-blog.com/programming/windows-tapdevice/  
+　ちゃんとインストールできた場合、ネットワーク接続の一覧画面で見るとこんな感じです。
+![一覧](./tap1.png)  
+### インストールしたアダプタをリネームする
+　インストールしたそのままだとXM6 TypeGからの指定が面倒なのでわかりやすい名前にリネームします  
+　TAPドライバをクリックして選択→上に表示される「この接続の名前を変更する」をクリック→わかりやすい名前に変更します  
+ ![リネームの図](./tap2.png)
 ### XM6 TypeGの設定画面でNereidを有効化して、TAPドライバ名を設定する  
 　こんな感じで赤丸の個所を適宜設定する  
  ![設定ﾀﾞｲｱﾛｸﾞ](xm6g_setting.png)  
