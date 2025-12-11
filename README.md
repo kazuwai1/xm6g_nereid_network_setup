@@ -37,8 +37,8 @@ TAPアダプタをクリックして選択→上に表示される「この接�
 #### CONFIG.SYS  
 ・"PROCESS=”行を設定する  
 　→TCPPACKAのドキュメントには "PROCESS=2 10 10"、Nereidのドキュメントには"PROCESS=32 10 100"とあります。とりあえずどちらでも動きます。  
-・etherL12.sys or etherL12.sys を組み込む  
-　→ rtherL12wa.sysはX68030をエミュレーションしている場合専用です。
+・etherL12.sys or etherL12wa.sys を組み込む  
+　→ etherL12wa.sysはX68030をエミュレーションしている場合専用です。
 #### ifconfigとinetdconf  
 ・ループバック(localhost)を使えるようにする： ifconfig lp0 up  
 ・ローカルネットワークの空きアドレスを en0 に設定する  
