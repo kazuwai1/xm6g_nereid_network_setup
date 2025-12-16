@@ -11,8 +11,8 @@
 ・Neptune-X / Nereid 用のネットワークドライバ  
 　→ etherL12.sys : http://retropc.net/x68000/software/hardware/nereid/   
 　→ etherL12wa.sys : https://github.com/yunkya2/etherL12  
-　　※"etherL12wa.sys"はXM6 TypeG(Ver3.37以前)＋X68030エミュレーション環境専用  
-  
+　　※"etherL12wa.sys"はXM6 TypeG(Ver3.37以前)＋X68030エミュレーション環境専用   
+　　※XM6 TypeG+040turboエミュレーション環境については私の環境では"etherL12.sys"で動作しています  
 ## やっておくこと  
 ・XM6 TypeG上でX68000もしくはX68030環境を動くようにしておく  
   
